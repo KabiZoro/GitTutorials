@@ -7,9 +7,13 @@ import androidx.compose.ui.tooling.preview.Preview
 import eu.tutorial.gittutorials.ui.theme.GitTutorialsTheme
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
+fun Greeting(name: String,name2: String, modifier: Modifier = Modifier) {
     Text(
         text = "Hello $name!",
+        modifier = modifier
+    )
+    Text(
+        text = "Vinsmoke $name2",
         modifier = modifier
     )
 }
@@ -18,6 +22,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     GitTutorialsTheme {
-        Greeting("Android")
+        Greeting("Zoro","Sanji")
     }
 }
